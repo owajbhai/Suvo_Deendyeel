@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '27696177'))
+API_HASH = environ.get('API_HASH', '0c44906a4feff3b947db76dfa7c57d88')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7498158728:AAEnlOmv6q3h0CcGNR_tVOm4yom41TMoEHs")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -30,20 +30,20 @@ CODE = (environ.get('CODE', 'https://graph.org/file/e419f801841c2ee3db0fc.jpg'))
 
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6646028262').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001881877723').split()] #Channel id for auto indexing ( make sure bot is admin )
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001970548842')) #Log channel id ( make sure bot is admin )
-DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '-1001970548842')) #Notification of those who verify will be sent to your channel. Enter the ID of the channel you want to send notification to here.
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1001970548842')) # add premium logs channel id
-auth_channel = environ.get('AUTH_CHANNEL', '') #Channel / Group Id for force sub ( make sure bot is admin )
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '852190589').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002435097024').split()] #Channel id for auto indexing ( make sure bot is admin )
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002116984433')) #Log channel id ( make sure bot is admin )
+DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '-1002090559987')) #Notification of those who verify will be sent to your channel. Enter the ID of the channel you want to send notification to here.
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002116984433')) # add premium logs channel id
+auth_channel = environ.get('AUTH_CHANNEL', '-1001643143406') #Channel / Group Id for force sub ( make sure bot is admin )
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002474691060').split()]
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '') # support group id ( make sure bot is admin )
-reqst_channel = environ.get('REQST_CHANNEL_ID', '') # request channel id ( make sure bot is admin ).
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '1001837694049') # support group id ( make sure bot is admin )
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001837694049') # request channel id ( make sure bot is admin ).
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "cluster")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://poojasharmapojaa:DcqhSrAqpnnSl1rS@cluster0.8nqn2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # index movie Notification & update channel 
@@ -55,26 +55,26 @@ CAPTION_LANGUAGES = ["Bhojpuri", "Hindi", "Bengali", "Tamil", "English", "Bangla
 
 # Verify
 VERIFY = bool(environ.get('VERIFY', True)) # Verification On ( True ) / Off ( False )
-DEENDAYAL_VERIFY_EXPIRE = int(environ.get('DEENDAYAL_VERIFY_EXPIRE', 24)) # Add time in hours
-DEENDAYAL_VERIFIED_LOG = int(environ.get('DEENDAYAL_VERIFIED_LOG', '-1002370988072')) #Log channel id ( make sure bot is admin )
-HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/Deenu_dhakad') # How to open tutorial link for verification
+DEENDAYAL_VERIFY_EXPIRE = int(environ.get('DEENDAYAL_VERIFY_EXPIRE', '03')) # Add time in hours
+DEENDAYAL_VERIFIED_LOG = int(environ.get('DEENDAYAL_VERIFIED_LOG', '-1002116984433')) #Log channel id ( make sure bot is admin )
+HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/+d0lcBktNrZY0NDhl') # How to open tutorial link for verification
 
 # Shortner 
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shortxlinks.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '820b18ededb2ed6cf4de90d828e900add9a1a60d')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Deenu_dhakad') # Tutorial video link for opening shortlink website 
+SHORTLINK_API = environ.get('SHORTLINK_API', '5174613668dc507cfe3b8b80b3c5a1b0f718278c')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+d0lcBktNrZY0NDhl') # Tutorial video link for opening shortlink website 
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 
 #Channel & Group link 
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+kF6kYm_7o_wxM2E1')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Deendayal_dhakad')
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Sorry_Sorry_Galti_Ho_Gai')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/MdiskGroup')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/super4crazy')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/super4crazy786')
 
 
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '852190589').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
+PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '852190589').split()]
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -84,7 +84,7 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True)) # True if you want no
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-MSG_ALRT = environ.get('MSG_ALRT', 'Deendayal_dhakad')
+MSG_ALRT = environ.get('MSG_ALRT', 'super4crazy')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/') #Support group link ( make sure bot is admin )
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
@@ -151,4 +151,4 @@ LOG_STR += (f"CUSTOM_FILE_CAPTION enabled with value {CUSTOM_FILE_CAPTION}, your
 LOG_STR += ("Long IMDB storyline enabled." if LONG_IMDB_DESCRIPTION else "LONG_IMDB_DESCRIPTION is disabled , Plot will be shorter.\n")
 LOG_STR += ("Spell Check Mode Is Enabled, bot will be suggesting related movies if movie not found\n" if SPELL_CHECK_REPLY else "SPELL_CHECK_REPLY Mode disabled\n")
 LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST_ELM} elements\n" if MAX_LIST_ELM else "Full List of casts and crew will be shown in imdb template, restrict them by adding a value to MAX_LIST_ELM\n")
-LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
+LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}
