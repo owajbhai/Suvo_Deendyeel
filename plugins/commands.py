@@ -52,7 +52,7 @@ async def start(client, message):
                     InlineKeyboardButton('🔰 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔰', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('🕵️‍♂️ Tᴏᴘ Sᴇᴀʀᴄʜɪɴɢ', callback_data="topsearch"),
-                    InlineKeyboardButton('🔄 sᴜᴘᴘᴏʀᴛ', callback_data='channels')
+                    InlineKeyboardButton(' sᴜᴘᴘᴏʀᴛ 🔄', callback_data='channels')
                 ],[
                     InlineKeyboardButton(' ʜᴇʟᴘ 🚨', callback_data='help'),
                     InlineKeyboardButton(' ᴀʙᴏᴜᴛ ❓ ', callback_data='about')
@@ -128,7 +128,7 @@ async def start(client, message):
                     InlineKeyboardButton('🔰 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔰', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('🕵️‍♂️ Tᴏᴘ Sᴇᴀʀᴄʜɪɴɢ', callback_data="topsearch"),
-                    InlineKeyboardButton('🔄 sᴜᴘᴘᴏʀᴛ', callback_data='channels')
+                    InlineKeyboardButton(' sᴜᴘᴘᴏʀᴛ 🔄', callback_data='channels')
                 ],[
                     InlineKeyboardButton(' ʜᴇʟᴘ 🚨', callback_data='help'),
                     InlineKeyboardButton(' ᴀʙᴏᴜᴛ ❓ ', callback_data='about')
