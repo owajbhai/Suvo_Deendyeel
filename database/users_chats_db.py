@@ -12,13 +12,11 @@ mydb = my_client["filename"]
 async def add_name(user_id, filename):
     user_db = mydb[str(user_id)]
     user = {'_id': filename}
-    
-    # Check if the document already exists
+
     existing_user = user_db.find_one({'_id': filename})
+
     if existing_user is not None:
         return False
-    
-    # Attempt to insert the document
     try:
         user_db.insert_one(user)
         return True
@@ -29,8 +27,6 @@ async def delete_all_msg(user_id):
     user_db = mydb[str(user_id)]
     user_db.delete_many({})
     
-
-
 class Database:
     
     def __init__(self, uri, database_name):
