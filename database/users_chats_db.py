@@ -255,7 +255,6 @@ class Database:
         return False
 
     async def give_free_trial(self, user_id):
-        #await set_free_trial_status(user_id)
         user_id = user_id
         seconds = 5*60         
         expiry_time = datetime.datetime.now() + datetime.timedelta(seconds=seconds)
