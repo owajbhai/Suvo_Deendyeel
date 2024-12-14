@@ -216,7 +216,6 @@ class Database:
         if user_data:
             expiry_time = user_data.get("expiry_time")
             if expiry_time is None:
-                # User previously used the free trial, but it has ended.
                 return False
             elif isinstance(expiry_time, datetime.datetime) and datetime.datetime.now() <= expiry_time:
                 return True
@@ -229,7 +228,6 @@ class Database:
 
     async def update_one(self, filter_query, update_data):
         try:
-            # Assuming self.client and self.users are set up properly
             result = await self.users.update_one(filter_query, update_data)
             return result.matched_count == 1
         except Exception as e:
