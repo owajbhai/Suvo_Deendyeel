@@ -28,6 +28,7 @@ class script(object):
 
     
     STATUS_TXT = """<b>╭────[ 🗃 ᴅᴀᴛᴀʙᴀsᴇ 1 🗃 ]────⍟</b>
+│    
 ├⋟ 🕵️ ᴀʟʟ ᴜsᴇʀs:- <code>{}</code>
 ├⋟ 🏹 ᴀʟʟ ɢʀᴏᴜᴘs:- <code>{}</code>
 ├⋟ 📽️ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ:- <code>{}</code>
