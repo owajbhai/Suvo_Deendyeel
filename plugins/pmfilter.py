@@ -42,7 +42,7 @@ logger.setLevel(logging.ERROR)
 import requests
 import string
 import tracemalloc
-# Enable tracemalloc
+
 tracemalloc.start()
 
 
@@ -54,7 +54,7 @@ BUTTONS0 = {}
 BUTTONS1 = {}
 BUTTONS2 = {}
 SPELL_CHECK = {}
-# ENABLE_SHORTLINK = ""
+
 
 def generate_random_alphanumeric():
     """Generate a random 8-letter alphanumeric string."""
