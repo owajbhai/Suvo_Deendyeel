@@ -106,8 +106,6 @@ async def get_qualities(text, qualities: list):
     quality = ", ".join(quality)
     return quality[:-2] if quality.endswith(", ") else quality
 
-
-
 async def save_file(bot, media):
   """Save file in database"""
 
@@ -142,8 +140,6 @@ async def save_file(bot, media):
         await send_msg(bot, file.file_name, file.caption)
       return True, 1
 
-
-
 async def get_search_results(chat_id, query, file_type=None, max_results=10, offset=0, filter=False):
     """For given query return (results, next_offset)"""
     if chat_id is not None:
@@ -161,10 +157,7 @@ async def get_search_results(chat_id, query, file_type=None, max_results=10, off
             else:
                 max_results = int(MAX_B_TN)
     query = query.strip()
-    #if filter:
-        #better ?
-        #query = query.replace(' ', r'(\s|\.|\+|\-|_)')
-        #raw_pattern = r'(\s|_|\-|\.|\+)' + query + r'(\s|_|\-|\.|\+)'
+
     if not query:
         raw_pattern = '.'
     elif ' ' not in query:
@@ -192,11 +185,11 @@ async def get_search_results(chat_id, query, file_type=None, max_results=10, off
         next_offset = ''
 
     cursor = Media.find(filter)
-    # Sort by recent
+
     cursor.sort('$natural', -1)
-    # Slice files according to offset and max results
+
     cursor.skip(offset).limit(max_results)
-    # Get list of files
+
     files = await cursor.to_list(length=max_results)
 
     return files, next_offset, total_results
@@ -204,10 +197,6 @@ async def get_search_results(chat_id, query, file_type=None, max_results=10, off
 async def get_bad_files(query, file_type=None, filter=False):
     """For given query return (results, next_offset)"""
     query = query.strip()
-    #if filter:
-        #better ?
-        #query = query.replace(' ', r'(\s|\.|\+|\-|_)')
-        #raw_pattern = r'(\s|_|\-|\.|\+)' + query + r'(\s|_|\-|\.|\+)'
     if not query:
         raw_pattern = '.'
     elif ' ' not in query:
@@ -231,9 +220,9 @@ async def get_bad_files(query, file_type=None, filter=False):
     total_results = await Media.count_documents(filter)
 
     cursor = Media.find(filter)
-    # Sort by recent
+
     cursor.sort('$natural', -1)
-    # Get list of files
+
     files = await cursor.to_list(length=total_results)
 
     return files, total_results
