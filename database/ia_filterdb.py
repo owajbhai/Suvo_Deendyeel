@@ -50,7 +50,6 @@ async def send_msg(bot, filename, caption):
         if not season:
             season = re.search(pattern, filename)
         
-        # cut the filename till the year end
         if year:
             filename = filename[: filename.find(year) + 4]
             
@@ -58,8 +57,7 @@ async def send_msg(bot, filename, caption):
           if season:
             season = season.group(1) if season else None 
             filename = filename[: filename.find(season) +1 ]
-                    
-        # Extract language from caption if it exists in the list of possible languages
+
         qualities = ["ORG", "org", "hdcam", "HDCAM", "HQ", "hq", "HDRip", "hdrip", "camrip", "CAMRip", "hdtc", "predvd", "DVDscr", "dvdscr", "dvdrip", "dvdscr", "HDTC", "dvdscreen", "HDTS", "hdts"]
         quality = await get_qualities(caption.lower(), qualities) or "HDRip"
 
