@@ -51,6 +51,5 @@ class VR_db:
         count = self.collection.count_documents({'verified_at': {'$gt': start_datetime, '$lt': end_datetime}})
         return count
 
-# Instantiate the VerificationDatabase class with appropriate parameters
 vr_db = VR_db(DATABASE_URI, DATABASE_NAME, 'Asia/Kolkata')
           
