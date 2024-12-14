@@ -6,7 +6,7 @@ from PIL import Image
 from info import DEENDAYAL_IMAGE_FETCH
 from imdb import Cinemagoer
 
-# Initialize IMDb instance using Cinemagoer
+
 ia = Cinemagoer()
 LONG_IMDB_DESCRIPTION = False
 
