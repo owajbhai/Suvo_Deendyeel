@@ -27,13 +27,16 @@ class script(object):
 ▫ 𝟸𝟺x𝟽 sᴇʀᴠɪᴄᴇs ᴀᴠᴀɪʟᴀʙʟᴇ.</b>"""
 
     
-    STATUS_TXT = """<b>╭────[ <blockquote>Sᴛᴀᴛᴜs</blockquote> ]────⍟
-├⍟ Tᴏᴛᴀʟ Fɪʟᴇs : <code>{}</code>
-├⍟ Tᴏᴛᴀʟ Usᴇʀs : <code>{}</code>
-├⍟ Tᴏᴛᴀʟ Cʜᴀᴛs : <code>{}</code>
-├⍟ Usᴇᴅ Sᴛᴏʀᴇɢᴇ : <code>{}</code>
-├⍟ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ : <code>{}</code>
-╰───────────────⍟</b>"""
+    STATUS_TXT = """<b>🗃 ᴅᴀᴛᴀʙᴀsᴇ 1 🗃</b>
+⋟🕵️ ᴛᴏᴛᴀʟ ᴜsᴇʀs:- <code>{}</code>
+⋟🏹 ᴛᴏᴛᴀʟ ɢʀᴏᴜᴘs:- <code>{}</code>
+⋟📽️ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ:- <code>{}</code>
+⋟🏷️ ꜰʀᴇᴇ sᴛᴏʀᴀɢᴇ:- <code>{}</code>
+
+<b>🗳 ᴅᴀᴛᴀʙᴀsᴇ 2 🗳</b>
+⋟🎬 ᴛᴏᴛᴀʟ ꜰɪʟᴇs:- <code>{}</code>
+⋟🎤 size - {}
+⋟🎭 free - {}"""
 
     LOG_TEXT_G = """#NewGroup
     
