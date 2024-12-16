@@ -47,6 +47,13 @@ DATABASE_URI2 = environ.get('DATABASE_URI2', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Deendayal_files')
 
+#Channel & Group link 
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+kF6kYm_7o_wxM2E1')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Deendayal_dhakad')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Sorry_Sorry_Galti_Ho_Gai')
+DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/Sorry_Sorry_Galti_Ho_Gai')
+
+
 # index movie Notification & update channel 
 DEENDAYAL_MOVIE_UPDATE_NOTIFICATION = bool(environ.get('DEENDAYAL_MOVIE_UPDATE_NOTIFICATION', False))  # NOTIFICATION On ( True ) / Off ( False )
 DEENDAYAL_IMAGE_FETCH = bool(environ.get('DEENDAYAL_IMAGE_FETCH', True))  #  On ( True ) / Off ( False )
@@ -61,17 +68,12 @@ DEENDAYAL_VERIFIED_LOG = int(environ.get('DEENDAYAL_VERIFIED_LOG', '-10023709880
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/Deenu_dhakad') # How to open tutorial link for verification
 
 # Shortner 
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False)) # Shortlink On ( True ) / Off ( False )
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shortxlinks.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', '820b18ededb2ed6cf4de90d828e900add9a1a60d')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Deenu_dhakad') # Tutorial video link for opening shortlink website 
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 
-#Channel & Group link 
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+kF6kYm_7o_wxM2E1')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Deendayal_dhakad')
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Sorry_Sorry_Galti_Ho_Gai')
-DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/Sorry_Sorry_Galti_Ho_Gai')
 
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
