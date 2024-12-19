@@ -18,7 +18,8 @@ First Check our **Demo** bot -
 
 ## 🌴 [Sahid malik](https://github.com/Sahidmalik001)
 
-### 🌴 [Raazz](https://github.com/MrRaazz)
+### 🌴 [MrRaazz](https://github.com/MrRaazz)
+
 
 ### 🌴 [HarshalPurohitEdits](https://github.com/HarshalPurohitEdits)
 
@@ -133,6 +134,6 @@ This repository is provided for educational purposes only. It is not intended fo
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/Deendayal403/Deendayal_dhakad/blob/Deendayal_dhakad/LICENSE)
+This project is licensed under the [MIT License](https://github.com/biisal/biisal-filter-bot/blob/main/LICENSE)
 
 ### Deendayal Dhakad  !😉
