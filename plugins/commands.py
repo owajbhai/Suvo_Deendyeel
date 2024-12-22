@@ -377,10 +377,12 @@ async def start(client, message):
             current_date = now.strftime("%Y-%m-%d")
             
             deendayal_message = (
-                f"Name: {message.from_user.mention}\n"
-                f"Time: {current_time}\n"
-                f"Date: {current_date}\n"
-                f"#verify_completed"
+                VERIFIED_LOG_TEXT = """<b><u>☄ ᴜsᴇʀ ᴠᴇʀɪꜰɪᴇᴅ sᴜᴄᴄᴇssꜰᴜʟʟʏ ☄</u>
+
+⚡️ ɴᴀᴍᴇ:- {} [ <code>{}</code> ] 
+📆 ᴅᴀᴛᴇ:- <code>{} </code></b>
+
+#verified_{}_completed"""
             )
             await client.send_message(chat_id=DEENDAYAL_VERIFIED_LOG, text=deendayal_message)
 
