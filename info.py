@@ -44,8 +44,8 @@ reqst_channel = environ.get('REQST_CHANNEL_ID', '') # request channel id ( make 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://arpitgavla121:vWDED1tOOmdV0mAq@cluster0.kic1m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://keshavptdr98:D8lbdQUW4euV07l4@cluster0.dok926y.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "techvjclonefilterbo")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
+DATABASE_NAME = environ.get('DATABASE_NAME', "Arpit")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'ArpitBots')
 
 # index movie Notification & update channel 
 DEENDAYAL_MOVIE_UPDATE_NOTIFICATION = bool(environ.get('DEENDAYAL_MOVIE_UPDATE_NOTIFICATION', False))  # NOTIFICATION On ( True ) / Off ( False )
