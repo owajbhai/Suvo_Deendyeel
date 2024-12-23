@@ -200,7 +200,7 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐁𝐮𝐲 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium")
+            InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
            
         ])
 
@@ -219,7 +219,7 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐁𝐮𝐲 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium") 
+            InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
            
         ])
 
@@ -450,7 +450,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐁𝐮𝐲 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium")
+            InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
            
         ])
 
@@ -469,7 +469,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐁𝐮𝐲 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium")
+            InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
            
         ])
 
@@ -615,7 +615,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐁𝐮𝐲 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium")
+           InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
             
         ])
 
@@ -634,7 +634,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐁𝐮𝐲 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium")
+            InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
             
         ])
 
@@ -798,7 +798,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             for file in files
         ]
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐁𝐮𝐲 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium"),
+            InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info"),
             InlineKeyboardButton("ꜱᴇʟᴇᴄᴛ ᴀɢᴀɪɴ", callback_data=f"seasons#{key}")
         ])
     else:
@@ -817,7 +817,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐁𝐮𝐲 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=plan")
+           InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
             
         ])
     
@@ -2407,7 +2407,7 @@ async def auto_filter(client, msg, spoll=False):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐁𝐮𝐲 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium")
+            InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
             
         ])
 
@@ -2426,7 +2426,7 @@ async def auto_filter(client, msg, spoll=False):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐁𝐮𝐲 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium")
+           InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
             
         ])
 
