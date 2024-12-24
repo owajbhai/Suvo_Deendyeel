@@ -268,9 +268,7 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     
     CAPTION = """<b><a href="https://t.me/Deendayal_dhakad">{file_name}</a></b>\n\n<b>⚜️ Powered By : <a href=https://t.me/Deendayal_dhakad>[Deendayal_Dhakad]</a></b>"""
 
-    IMDB_TEMPLATE_TXT = """
-<b>IMDB_TEMPLATE_TXT = """
-<b>Query: {qurey}"""
+
 
 IMDb Data:"""
 
