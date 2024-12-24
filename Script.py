@@ -270,7 +270,7 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>IMDB_TEMPLATE_TXT = """
-<b>Query: {qurey}
+<b>Query: {qurey}"""
 
 IMDb Data:"""
 
