@@ -155,7 +155,7 @@ async def plan(client, message):
             InlineKeyboardButton('💎 ᴅɪᴀᴍᴏɴᴅ ', callback_data='diamond'),
             InlineKeyboardButton('🤦 ᴏᴛʜᴇʀ ', callback_data='other')
         ],[
-            InlineKeyboardButton('🔥 ꜰʀᴇᴇ ᴛʀɪᴀʟ ', callback_data='free')
+            #InlineKeyboardButton('🔥 ꜰʀᴇᴇ ᴛʀɪᴀʟ ', callback_data='free')
         ],[            
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
     ]]
