@@ -276,7 +276,6 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
 📀 RunTime: {runtime} Minutes
 
 ⏰Result Shown in: {remaining_seconds} <i>seconds</i> 🔥
-
 Requested by : {message.from_user.mention}</b>"""
     
 
@@ -347,7 +346,7 @@ BOT WORKING PROPERLY"""
 
 ‼️ ᴀғᴛᴇʀ sᴇɴᴅɪɴɢ ᴀ sᴄʀᴇᴇɴsʜᴏᴛ ᴘʟᴇᴀsᴇ ɢɪᴠᴇ ᴜs sᴏᴍᴇ ᴛɪᴍᴇ ᴛᴏ ᴀᴅᴅ ʏᴏᴜ ɪɴ ᴛʜᴇ ᴘʀᴇᴍɪᴜᴍ ʟɪsᴛ.</b>"""
 
-FREE_TXT = """<b>👋 ʜᴇʏ {},
+    FREE_TXT = """<b>👋 ʜᴇʏ {},
     
 🎉 <u>ꜰʀᴇᴇ ᴛʀɪᴀʟ</u> 🎉
 ❗ ᴏɴʟʏ ꜰᴏʀ 5 ᴍɪɴᴜᴛᴇꜱ
@@ -517,12 +516,7 @@ Exᴀᴍᴘʟᴇ 👉 /Instagram ʜᴛᴛᴘs://ᴡᴡᴡ.ɪɴsᴛᴀɢʀᴀᴍ.
     
     IMDBSEARCH_TEMPLATE = """<b>Qᴜᴇʀʏ: {query}</b>
 
-<b>🏷 Title</b>: <a href={url}>{title}</a>
-🎭 Genres: {genres}
-📆 Year: <a href={url}/releaseinfo>{year}</a>
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
-☀️ Languages : <code>{languages}</code>
-📀 RunTime: {runtime} Minutes
-📆 Release Info : {release_date}
-🎛 Countries : <code>{countries}</code>"""
-
+🏷 Tɪᴛʟᴇ: <a href={url}>{title}</a>
+🎭 Gᴇɴʀᴇꜱ: {genres}
+📆 Yᴇᴀʀ: <a href={url}/releaseinfo>{year}</a>
+🌟 Rᴀᴛɪɴɢ: <a href={url}/ratings>{rating}</a>/10"""
