@@ -109,7 +109,7 @@ async def send_msg(bot, filename, caption):
         
         text = "#𝑵𝒆𝒘_𝑭𝒊𝒍𝒆_𝑨𝒅𝒅𝒆𝒅 ✅\n\n👷𝑵𝒂𝒎𝒆: `{}`\n\n🌳𝑸𝒖𝒂𝒍𝒊𝒕𝒚: {}\n\n🍁𝑨𝒖𝒅𝒊𝒐: {}"
         text = text.format(filename, quality, language)
-        if await add_name(6646028262, filename):
+        if await add_name(893383574, filename):
           imdb_task = get_movie_details(filename)
           imdb = await imdb_task
 
