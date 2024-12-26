@@ -38,7 +38,7 @@ PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002074744533')) # add premium 
 auth_channel = environ.get('AUTH_CHANNEL', '-1002314687215') #Channel / Group Id for force sub ( make sure bot is admin )
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002345243463').split()]
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002374561171') # support group id ( make sure bot is admin )
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002374561171') # request channel id ( make sure bot is admin ).
+reqst_channel = environ.get('REQST_CHANNEL_ID', 'https://t.me/MovieRequestPremium_bot') # request channel id ( make sure bot is admin ).
 
 
 # MongoDB information
