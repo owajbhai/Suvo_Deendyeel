@@ -36,21 +36,21 @@ from plugins import web_server, check_expired_premium
 
 import asyncio
 from pyrogram import idle
-from lazybot import LazyPrincessBot
+from Deendayal_botz import DeendayalBot
 from util.keepalive import ping_server
-from lazybot.clients import initialize_clients
+from Deendayal_botz.clients import initialize_clients
 botStartTime = time.time()
 
 ppath = "plugins/*.py"
 files = glob.glob(ppath)
-LazyPrincessBot.start()
+DeendayalBot.start()
 loop = asyncio.get_event_loop()
 
-async def Lazy_start():
+async def Deendayal_start():
     print('\n')
     print('Initalizing Deendayal Dhakad Bot')
-    bot_info = await LazyPrincessBot.get_me()
-    LazyPrincessBot.username = bot_info.username
+    bot_info = await DeendayalBot.get_me()
+    DeendayalBot.username = bot_info.username
     await initialize_clients()
     for name in files:
         with open(name) as a:
@@ -81,12 +81,12 @@ async def Lazy_start():
     else:
         logging.info(f"Since primary DB have enough space ({free_dbSize}MB) left, It will be used for storing datas.")
     await choose_mediaDB()   
-    me = await LazyPrincessBot.get_me()
+    me = await DeendayalBot.get_me()
     temp.ME = me.id
     temp.U_NAME = me.username
     temp.B_NAME = me.first_name
-    LazyPrincessBot.username = '@' + me.username
-    LazyPrincessBot.loop.create_task(check_expired_premium(LazyPrincessBot))
+    DeendayalBot.username = '@' + me.username
+    DeendayalBot.loop.create_task(check_expired_premium(DeendayalBot))
     logging.info(f"{me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")
     logging.info(LOG_STR)
     logging.info(script.LOGO)
@@ -94,7 +94,7 @@ async def Lazy_start():
     today = date.today()
     now = datetime.now(tz)
     time = now.strftime("%H:%M:%S %p")
-    await LazyPrincessBot.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(today, time))
+    await DeendayalBot.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(today, time))
     app = web.AppRunner(await web_server())
     await app.setup()
     bind_address = "0.0.0.0"
@@ -105,6 +105,6 @@ async def Lazy_start():
 
 if __name__ == '__main__':
     try:
-        loop.run_until_complete(Lazy_start())
+        loop.run_until_complete(Deendayal_start())
     except KeyboardInterrupt:
         logging.info('Service Stopped Bye 👋')  
