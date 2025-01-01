@@ -1,6 +1,6 @@
 
 import motor.motor_asyncio
-from info import DATABASE_NAME, DATABASE_URI, DATABASE_URI2, IMDB, IMDB_TEMPLATE, MELCOW_NEW_USERS, P_TTI_SHOW_OFF, SINGLE_BUTTON, SPELL_CHECK_REPLY, PROTECT_CONTENT, AUTO_DELETE, MAX_BTN, AUTO_FFILTER, SHORTLINK_API, SHORTLINK_URL, IS_SHORTLINK, TUTORIAL, IS_TUTORIAL, VERIFY
+from info import DATABASE_NAME, DATABASE_URI, DATABASE_URI2, PM_SEARCH, IMDB, IMDB_TEMPLATE, MELCOW_NEW_USERS, P_TTI_SHOW_OFF, SINGLE_BUTTON, SPELL_CHECK_REPLY, PROTECT_CONTENT, AUTO_DELETE, MAX_BTN, AUTO_FFILTER, SHORTLINK_API, SHORTLINK_URL, IS_SHORTLINK, TUTORIAL, IS_TUTORIAL, VERIFY
 import datetime
 import pytz  
 from pymongo.errors import DuplicateKeyError
@@ -36,6 +36,7 @@ class Database:
         self.grp = self.db.groups
         self.users = self.db.uersz
         self.req = self.db.requests
+        self.bse = self.db.settings
         
     async def find_join_req(self, id):
         return bool(await self.req.find_one({'id': id}))
@@ -208,6 +209,20 @@ class Database:
     async def update_user(self, user_data):
         await self.users.update_one({"id": user_data["id"]}, {"$set": user_data}, upsert=True)
 
+    async def get_pm_search_status(self, bot_id):
+        bot = await self.bse.find_one({'id': bot_id})
+        if bot and bot.get('bot_pm_search'):
+            return bot['bot_pm_search']
+        else:
+            return PM_SEARCH
+
+    async def update_pm_search_status(self, bot_id, enable):
+        bot = await self.bse.find_one({'id': int(bot_id)})
+        if bot:
+            await self.bse.update_one({'id': int(bot_id)}, {'$set': {'bot_pm_search': enable}})
+        else:
+            await self.bse.insert_one({'id': int(bot_id), 'bot_pm_search': enable})
+            
     async def has_premium_access(self, user_id):
         user_data = await self.get_user(user_id)
         if user_data:
