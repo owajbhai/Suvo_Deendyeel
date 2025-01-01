@@ -111,9 +111,10 @@ async def pm_text(bot, message):
     content = message.text
     user = message.from_user.first_name
     user_id = message.from_user.id
+    bot_id = bot.me.id   
     #await message.react(emoji=random.choice(REACTIONS), big=True)
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
-    if PM_SEARCH:
+    if await db.get_pm_search_status(bot_id):        
         await auto_filter(bot, message)
     else:    
         await message.reply_text(
