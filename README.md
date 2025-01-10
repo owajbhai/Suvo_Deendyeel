@@ -1,9 +1,5 @@
-<p align="center">
-  <img src="https://graph.org/file/ef043e0bfe76db3af15f9.jpg">
-</p>
-<h1 align="center">
-  𝑫𝒆𝒆𝒏𝒅𝒂𝒚𝒂𝒍_𝒅𝒉𝒂𝒌𝒂𝒅
-</h1>
+<p align="center"> <img src="https://graph.org/file/ef043e0bfe76db3af15f9.jpg"> </p>
+<h1 align="center"> 𝑫𝒆𝒆𝒏𝒅𝒂𝒚𝒂𝒍_𝒅𝒉𝒂𝒌𝒂𝒅 </h1>
 
 **OWNER**
 
@@ -15,15 +11,13 @@ First Check our **Demo** bot -
 
 ## Special Thanks To
 
+### 🌴 [Sᴀʜɪᴅ ᴍᴀʟɪᴋ](https://github.com/Sahidmalik001)
 
-## 🌴 [Sahid malik](https://github.com/Sahidmalik001)
+### 🌴 [Mʀ Rᴀᴀᴢᴢ](https://github.com/MrRaazz)
 
-### 🌴 [MrRaazz](https://github.com/MrRaazz)
+### 🌴 [Hᴀʀsʜᴀʟ Pᴜʀᴏʜɪᴛ Eᴅɪᴛs](https://github.com/HarshalPurohitEdits)
 
-
-### 🌴 [HarshalPurohitEdits](https://github.com/HarshalPurohitEdits)
-
-### 🌴 [Support Group](https://t.me/Deendayal_Support_Group)
+### 🌴 [Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ](https://t.me/Deendayal_Support_Group)
 
 ### Need Deployment Support?
 
@@ -32,7 +26,11 @@ If you encounter any issues **Deploying** the bot, feel free to seek assistance 
 [![Join Support Group    ](https://img.shields.io/badge/Join%20Support%20Group-Click%20Here-blue?style=flat&logo=telegram&labelColor=white&link=https://t.me/Deendayal_dhakad)](https://t.me/Deendayal_Support_Group)
 
   **features**
-
+- [x] 𝑩𝒐𝒕 𝒔𝒖𝒑𝒐𝒐𝒓𝒕 𝒊𝒎𝒑𝒓𝒐𝒗𝒆 𝒓𝒆𝒒𝒖𝒊𝒓𝒆𝒎𝒆𝒏𝒕𝒔  
+- [x] 𝑼𝑰 𝒊𝒎𝒑𝒓𝒐𝒗𝒆
+- [x] 𝑴𝒖𝒍𝒕𝒊 𝒇𝒔𝒖𝒃 𝒔𝒖𝒑𝒑𝒐𝒓𝒕
+- [x] 𝑼𝒑𝒅𝒂𝒕𝒆 𝒎𝒐𝒗𝒊𝒆 𝒊𝒏𝒇𝒐𝒓𝒎𝒂𝒕𝒊𝒐𝒏 𝒐𝒏 𝒐𝒇𝒇 𝒄𝒐𝒎𝒎𝒂𝒏𝒅
+- [x] 𝑷𝒎 𝒔𝒆𝒂𝒓𝒄𝒉 𝒐𝒏 𝒐𝒇𝒇 𝒄𝒐𝒎𝒎𝒂𝒏𝒅 
 - [x] 𝑽𝒆𝒓𝒊𝒇𝒊𝒆𝒅 𝑼𝒔𝒆𝒓 𝒄𝒐𝒖𝒏𝒕𝒆𝒓
 - [x] 𝑼𝒑𝒅𝒂𝒕𝒆 𝒎𝒐𝒗𝒊𝒆 𝒊𝒏𝒇𝒐𝒓𝒎𝒂𝒕𝒊𝒐𝒏
 - [x] 𝑻𝒐𝒑 𝒕𝒓𝒂𝒏𝒅𝒊𝒏𝒈
@@ -85,11 +83,12 @@ If you encounter any issues **Deploying** the bot, feel free to seek assistance 
 - [x] 𝐴𝑢𝑡𝑜 𝐷𝑒𝑙𝑒𝑡𝑒
 - [x] 𝐴𝑛𝑑 𝑀𝑜𝑟𝑒...
 
-<b>𝑇𝑜 𝑘𝑛𝑜𝑤 𝑎𝑏𝑜𝑢𝑡 𝑎𝑙𝑙 𝑓𝑒𝑎𝑡𝑢𝑟𝑒𝑠, 𝐽𝑜𝑖𝑛 𝑜𝑢𝑟 <a href='https://t.me/Deendayal_dhakad'>𝑢𝑝𝑑𝑎𝑡𝑒𝑠 𝑐ℎ𝑎𝑛𝑛𝑒𝑙</a>.</b>
-
+<b>𝑇𝑜 𝑘𝑛𝑜𝑤 𝑎𝑏𝑜𝑢𝑡 𝑎𝑙𝑙 𝑓𝑒𝑎𝑡𝑢𝑟𝑒𝑠, 𝐽𝑜𝑖𝑛 𝑜𝑢𝑟 <a href='https://t.me/dreamcinezone'>𝑢𝑝𝑑𝑎𝑡𝑒𝑠 𝑐ℎ𝑎𝑛𝑛𝑒𝑙</a>.</b>
 
 ## 𝐶𝑜𝑚𝑚𝑎𝑛𝑑𝑠
 ```
+movie_update - update channel notification on off
+pm_search - pm search on off 
 verification - check Total verified users
 top - to searching 
 start - ꜱᴛᴀʀᴛ ᴍᴇ...
@@ -126,14 +125,12 @@ premium_users - ɢᴇᴛ ʟɪꜱᴛ ᴏꜰ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀꜱ...
 restart - ʀᴇꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ...
 ```
 
-
-
 ## Disclaimer
 
 This repository is provided for educational purposes only. It is not intended for personal or commercial gain. Use of this repository and the code within is at your own risk. The authors and contributors are not responsible for any misuse or damage caused by the use of this project.
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/biisal/biisal-filter-bot/blob/main/LICENSE)
+This project is licensed under the [MIT License](https://github.com/Deendayal403/Deendayal_dhakad/blob/Deendayal_dhakad/LICENSE)
 
-### Deendayal Dhakad  !😉
+### Jai Shree Krishna  !😉
