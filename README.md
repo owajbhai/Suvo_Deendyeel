@@ -11,6 +11,8 @@ First Check our **Demo** bot -
 
 ## Special Thanks To
 
+### 🌴 [Sᴀʜɪᴅ ᴍᴀʟɪᴋ](https://github.com/Sahidmalik001)
+
 ### 🌴 [Mʀ Rᴀᴀᴢᴢ](https://github.com/MrRaazz)
 
 ### 🌴 [Hᴀʀsʜᴀʟ Pᴜʀᴏʜɪᴛ Eᴅɪᴛs](https://github.com/HarshalPurohitEdits)
