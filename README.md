@@ -3,15 +3,13 @@
 
 **OWNER**
 
-* [![Contact Developer](https://img.shields.io/static/v1?label=Contact+Developer&message=On+Telegram&color=critical)](https://telegram.me/Sorry_Sorry_Galti_Ho_Gai)
+* [![Contact Developer](https://img.shields.io/static/v1?label=Contact+Developer&message=On+Telegram&color=critical)](https://t.me/Deendayal_Support_Group)
 
 First Check our **Demo** bot -
 
-[![Click Here](https://img.shields.io/badge/Demo%20Bot-Click%20Here-blue?style=flat&logo=telegram&labelColor=white&link=https://t.me/Deendayal_files_bot)](https://t.me/Dhakad_files_bot)
+[![Click Here](https://img.shields.io/badge/Demo%20Bot-Click%20Here-blue?style=flat&logo=telegram&labelColor=white&link=https://t.me/Princess_V4_bot)](https://t.me/Princess_V4_bot)
 
 ## Special Thanks To
-
-### 🌴 [Sᴀʜɪᴅ ᴍᴀʟɪᴋ](https://github.com/Sahidmalik001)
 
 ### 🌴 [Mʀ Rᴀᴀᴢᴢ](https://github.com/MrRaazz)
 
@@ -23,7 +21,7 @@ First Check our **Demo** bot -
 
 If you encounter any issues **Deploying** the bot, feel free to seek assistance in our **support group**:
 
-[![Join Support Group    ](https://img.shields.io/badge/Join%20Support%20Group-Click%20Here-blue?style=flat&logo=telegram&labelColor=white&link=https://t.me/Deendayal_dhakad)](https://t.me/Deendayal_Support_Group)
+[![Join Support Group    ](https://img.shields.io/badge/Join%20Support%20Group-Click%20Here-blue?style=flat&logo=telegram&labelColor=white&link=https://t.me/Deendayal_Support_Group)](https://t.me/Deendayal_Support_Group)
 
   **features**
 - [x] 𝑩𝒐𝒕 𝒔𝒖𝒑𝒐𝒐𝒓𝒕 𝒊𝒎𝒑𝒓𝒐𝒗𝒆 𝒓𝒆𝒒𝒖𝒊𝒓𝒆𝒎𝒆𝒏𝒕𝒔  
