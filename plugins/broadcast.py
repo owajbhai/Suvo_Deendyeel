@@ -1,7 +1,7 @@
 import datetime, time, os, asyncio,logging 
 from pyrogram.errors import InputUserDeactivated, UserNotParticipant, FloodWait, UserIsBlocked, PeerIdInvalid
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong, PeerIdInvalid
-from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton,  ReplyKeyboardMarkup 
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram import Client, filters, enums
 from database.users_chats_db import db
 from info import ADMINS, GRP_LNK
@@ -11,49 +11,38 @@ from info import ADMINS, GRP_LNK
 async def broadcast(bot, message):
     users = await db.get_all_users()
     b_msg = message.reply_to_message
-    sts = await message.reply_text('Bʀᴏᴀᴅᴄᴛɪɴɢ Yᴏᴜʀ Mᴇssᴀɢᴇs...')
+    sts = await message.reply_text('Bʀᴏᴀᴅᴄᴀsᴛɪɴɢ Yᴏᴜʀ Mᴇssᴀɢᴇs...')
     start_time = time.time()
     total_users = await db.total_users_count()
     done = 0
     blocked = 0
     deleted = 0
-    failed = 0
+    failed =0
     success = 0
 
-    await bot.send_message(message.chat.id, "<b>Do you want to send the 'Group link' button with the broadcast? (Yes/No)</b>", 
-                           reply_markup=ReplyKeyboardMarkup([['Yes', 'No']], one_time_keyboard=True, resize_keyboard=True))
-    msg = await bot.listen(message.chat.id, filters=filters.text)
-    
-    if msg.text == 'Yes':
-        send_button = True
-    elif msg.text == 'No':
-        send_button = False
-    else:
-        return await msg.edit('Wrong Response!')
-    await msg.delete()
     btn = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton(" Sᴇᴀʀᴄʜ ʜᴇʀᴇ", url=GRP_LNK)]
         ]
-    ) if send_button else None
+    )
+
     async for user in users:
         pti, sh = await broadcast_messages(int(user['id']), b_msg, reply_markup=btn)
         if pti:
             success += 1
         elif pti == False:
             if sh == "Blocked":
-                blocked += 1
+                blocked+=1
             elif sh == "Deleted":
                 deleted += 1
             elif sh == "Error":
                 failed += 1
         done += 1
         if not done % 20:
-            await sts.edit(f"Bʀᴏᴀᴅᴄᴛ Iɴ Pʀᴏɢʀᴇss:\n\nTᴏᴛᴀʟ Uꜱᴇʀꜱ {total_users}\nCᴏᴍᴩʟᴇᴛᴇᴅ: {done} / {total_users}\nSᴜᴄᴄᴇss: {success}\nBʟᴏᴄᴋᴇᴅ: {blocked}\nDᴇʟᴇᴛᴇᴅ: {deleted}")    
-    
-    time_taken = datetime.timedelta(seconds=int(time.time() - start_time))
+            await sts.edit(f"Bʀᴏᴀᴅᴄᴀsᴛ Iɴ Pʀᴏɢʀᴇss:\n\nTᴏᴛᴀʟ Uꜱᴇʀꜱ {total_users}\nCᴏᴍᴩʟᴇᴛᴇᴅ: {done} / {total_users}\nSᴜᴄᴄᴇꜱꜱ: {success}\nBʟᴏᴄᴋᴇᴅ: {blocked}\nDᴇʟᴇᴛᴇᴅ: {deleted}")    
+    time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
     await sts.delete()
-    await bot.send_message(message.chat.id, f"Bʀᴏᴀᴅᴄᴛ Coᴍᴩʟᴇᴛᴇᴅ:\nTɪᴍᴇ Tᴀᴋᴇᴅ {time_taken} Sᴇᴄ\n\nTᴏᴛᴀʟ Uꜱᴇʀꜱ: {total_users}\nCᴏᴍᴩʟᴇᴛᴇᴅ: {done} / {total_users}\nSucᴄᴇss: {success}\nBʟᴏᴄᴋᴇᴅ: {blocked}\nDᴇʟᴇᴛᴇᴅ: {deleted}")
+    await bot.send_message(message.chat.id, f"Bʀᴏᴀᴅᴄᴀsᴛ Coᴍᴩʟᴇᴛᴇᴅ:\nTɪᴍᴇ Tᴀᴋᴇᴅ{time_taken} Sᴇᴄ\n\nTᴏᴛᴀʟ Uꜱᴇʀꜱ: {total_users}\nCᴏᴍᴩʟᴇᴛᴇᴅ: {done} / {total_users}\nSucᴄᴇꜱꜱ: {success}\nBʟᴏᴄᴋᴇᴅ: {blocked}\nDᴇʟᴇᴛᴇᴅ: {deleted}")
 
 
 @Client.on_message(filters.command("clear_junk") & filters.user(ADMINS))
