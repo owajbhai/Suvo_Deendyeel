@@ -61,8 +61,4 @@ googletrans==3.1.0a0
 telegraph==2.2.0
 gTTS==2.3.1
 
-<<<<<<< HEAD
-=======
-# Custom Pyrogram fork
-#https://codeload.github.com/KurimuzonAkuma/pyrogram/zip/refs/heads/dev
->>>>>>> 1acbdc5a1380aef6896c5a26c74cd38527751735
+
