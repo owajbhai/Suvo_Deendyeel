@@ -208,14 +208,15 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, 
-            [
-                InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
+            [ 
+                InlineKeyboardButton(f'Qᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("Sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐁𝐮𝐲 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium")
+            InlineKeyboardButton("⚜️ 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium"),
+            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
            
         ])
 
@@ -228,13 +229,14 @@ async def next_page(bot, query):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
+                InlineKeyboardButton(f'Qᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("Sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐁𝐮𝐲 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium") 
+            InlineKeyboardButton("⚜️ 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium"),
+            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}") 
            
         ])
 
@@ -351,7 +353,7 @@ async def advantage_spoll_choker(bot, query):
                 reqstr = await bot.get_users(reqstr1)
                 
                 if NO_RESULTS_MSG:
-                    await bot.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, movie)))
+                    await bot.send_message(chat_id=BIN_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, movie)))
                 
                 # Create the button for contacting admin
                 contact_admin_button = InlineKeyboardMarkup(
@@ -459,13 +461,14 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
+                InlineKeyboardButton(f'Qᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("Sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐁𝐮𝐲 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium")
+            InlineKeyboardButton("⚜️ 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium"),
+            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
            
         ])
 
@@ -478,13 +481,14 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
+                InlineKeyboardButton(f'Qᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("Sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐁𝐮𝐲 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium")
+            InlineKeyboardButton("⚜️ 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium"),
+            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
            
         ])
 
@@ -624,13 +628,14 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
+                InlineKeyboardButton(f'Qᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("Sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐁𝐮𝐲 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium")
+            InlineKeyboardButton("⚜️ 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium"),
+            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
             
         ])
 
@@ -643,13 +648,14 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
+                InlineKeyboardButton(f'Qᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("Sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐁𝐮𝐲 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium")
+            InlineKeyboardButton("⚜️ 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium"),
+            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
             
         ])
 
@@ -825,14 +831,14 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
-               # InlineKeyboardButton(f'Qᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton(f'Qᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("Sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐁𝐮𝐲 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=plan")
+            InlineKeyboardButton("⚜️ 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=plan"),
+            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
             
         ])
     
@@ -1760,7 +1766,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto('https://graph.org/file/99eebf5dbe8a134f548e0.jpg')
         )
         await query.message.edit_text(
-            text=script.DHAKAD_DONATION.format(query.from_user.mention),
+            text=script.DHAKAD_DONATION.format(query.from_user.mention, QR_CODE, OWNER_UPI_ID),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -1768,7 +1774,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "upi_info":
         buttons = [[
-            InlineKeyboardButton('📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ', user_id=int(1234567890))
+            InlineKeyboardButton('📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ', url=OWNER_LNK)
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='purchase')
         ]]
@@ -1779,14 +1785,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto("https://graph.org/file/7519d226226bec1090db7.jpg")
         )
         await query.message.edit_text(
-            text=script.UPI_TXT.format(query.from_user.mention),
+            text=script.UPI_TXT.format(query.from_user.mention, OWNER_UPI_ID),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
 
     elif query.data == "qr_info":
         buttons = [[
-            InlineKeyboardButton('📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ', user_id=int(1234567890))
+            InlineKeyboardButton('📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ʜᴇʀᴇ', url=OWNER_LNK)
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='purchase')
         ]]
@@ -1797,7 +1803,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto("https://graph.org/file/7519d226226bec1090db7.jpg")
         )
         await query.message.edit_text(
-            text=script.QR_TXT.format(query.from_user.mention),
+            text=script.QR_TXT.format(query.from_user.mention, QR_CODE),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -1837,7 +1843,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(btn)
         await query.message.reply_photo(
             photo=(SUBSCRIPTION),
-            caption=script.PREPLANS_TXT.format(query.from_user.mention),
+            caption=script.PREPLANS_TXT.format(query.from_user.mention, OWNER_UPI_ID, QR_CODE),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -1997,7 +2003,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "other":
         buttons = [[
-            InlineKeyboardButton('☎️ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ', user_id=int(1234567890))
+            InlineKeyboardButton('☎️ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ', url=OWNER_LNK)
         ],[
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='diamond'),
             InlineKeyboardButton('7 / 7', callback_data='pagesn1'),
@@ -2056,19 +2062,60 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
 
+
     elif query.data == "admic":
         if query.from_user.id not in ADMINS:
-            return await query.answer("⚠️ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀ ʙᴏᴛ ᴀᴅᴍɪɴ !", show_alert=True)        
-        buttons = [[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='help')
-        ]]
+            return await query.answer("⚠️ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀ ʙᴏᴛ ᴀᴅᴍɪɴ !", show_alert=True)
+        page = 0  
+        buttons = [
+            [InlineKeyboardButton('Next ➡️', callback_data=f'admic_next_{page}')],
+            [InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='help')]
+        ]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.ADMIC_TXT.format(query.from_user.mention),
+            text=commands[page],  
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    
+
+    elif query.data.startswith("admic_next_"):
+        page = int(query.data.split('_')[-1]) + 1
+        if page >= len(commands):
+            page = len(commands) - 1
+
+        buttons = []
+        if page > 0:
+            buttons.append(InlineKeyboardButton('Previous ⬅️', callback_data=f'admic_prev_{page}'))
+
+        if page < len(commands) - 1:
+            buttons.append(InlineKeyboardButton('Next ➡️', callback_data=f'admic_next_{page}'))
+
+        reply_markup = InlineKeyboardMarkup([buttons, [InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='help')]])
+        await query.message.edit_text(
+            text=commands[page],
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data.startswith("admic_prev_"):
+        page = int(query.data.split('_')[-1]) - 1
+        if page < 0:
+            page = 0  
+
+        buttons = []
+        if page > 0:
+            buttons.append(InlineKeyboardButton('Previous ⬅️', callback_data=f'admic_prev_{page}'))
+
+        if page < len(commands) - 1:
+            buttons.append(InlineKeyboardButton('Next ➡️', callback_data=f'admic_next_{page}'))
+
+        reply_markup = InlineKeyboardMarkup([buttons, [InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='help')]])
+        await query.message.edit_text(
+            text=commands[page],
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
 
     elif query.data == "help":
         buttons = [[
@@ -2405,14 +2452,14 @@ async def auto_filter(client, msg, spoll=False):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
-                
+                InlineKeyboardButton(f'Qᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("Sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐁𝐮𝐲 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium")
+            InlineKeyboardButton("⚜️ 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium"),
+            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
             
         ])
 
@@ -2425,13 +2472,14 @@ async def auto_filter(client, msg, spoll=False):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
+                InlineKeyboardButton(f'Qᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("Sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐁𝐮𝐲 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium")
+            InlineKeyboardButton("⚜️ 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium"),
+            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
             
         ])
 
