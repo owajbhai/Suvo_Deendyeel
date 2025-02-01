@@ -78,19 +78,10 @@ async def get_shortlink(url):
     loop = asyncio.get_event_loop()
     return await loop.run_in_executor(None, get_shortlink_sync, url)
 
-async def log_error(client, error_message):
-    """Logs errors to the specified LOG_CHANNEL."""
-    try:
-        await client.send_message(
-            chat_id=LOG_CHANNEL, 
-            text=f"<b>⚠️ Error Log:</b>\n<code>{error_message}</code>"
-        )
-    except Exception as e:
-        print(f"Failed to log error: {e}")
-
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
-    #await message.react(emoji=random.choice(REACTIONS), big=True)
+    if EMOJI_MODE:
+        await message.react(emoji=random.choice(REACTIONS), big=True)
     await mdb.update_top_messages(message.from_user.id, message.text)
     if message.chat.id != SUPPORT_CHAT_ID:
         manual = await manual_filters(client, message)
@@ -120,7 +111,8 @@ async def pm_text(bot, message):
     content = message.text
     user = message.from_user.first_name
     user_id = message.from_user.id
-    #await message.react(emoji=random.choice(REACTIONS), big=True)
+    if EMOJI_MODE:
+        await message.react(emoji=random.choice(REACTIONS), big=True)
     if content.startswith(("/", "#")):
         return  
     try:
@@ -138,7 +130,8 @@ async def pm_text(bot, message):
                 text=f"<b>#𝐏𝐌_𝐌𝐒𝐆\n\n👤 Nᴀᴍᴇ : {user}\n🆔 ID : {user_id}\n💬 Mᴇssᴀɢᴇ : {content}</b>"
             )
     except Exception as e:
-        await log_error(bot, f"[PM_TEXT ERROR] An error occurred.\n\nError: {e}")
+        # Log the error
+        print(f"An error occurred: {str(e)}")
 
 
 @Client.on_callback_query(filters.regex(r"^reffff"))
