@@ -55,16 +55,16 @@ MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1001
 # ============================
 # Payment Configuration
 # ============================
-QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/e419f801841c2ee3db0fc.jpg')
-OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'deendayaldhaked@ybl')
+QR_CODE = environ.get('QR_CODE', 'https://envs.sh/Akh.jpg')
+OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'royals9391@ibl')
 
 # ============================
 # MongoDB Configuration
 # ============================
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://wihav26710:<t6AzaSXZE4rzic05>@cluster0.papiw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://royalsrikanth140:n0O97ntpssfJWUjX@cluster0.788gy1y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "cluster")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Deendayal_files')
+DATABASE_NAME = environ.get('DATABASE_NAME', "royalsrikanth140")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'ROYALBOMMA')
 
 # ============================
 # Movie Notification & Update Settings
@@ -78,7 +78,7 @@ CAPTION_LANGUAGES = ["Bhojpuri", "Hindi", "Bengali", "Tamil", "English", "Bangla
 # ============================
 VERIFY = bool(environ.get('VERIFY', False))  # Verification On (True) / Off (False)
 DEENDAYAL_VERIFY_EXPIRE = int(environ.get('DEENDAYAL_VERIFY_EXPIRE', 24))  # Add time in hours
-DEENDAYAL_VERIFIED_LOG = int(environ.get('DEENDAYAL_VERIFIED_LOG', '-1002370988072'))  # Log channel id (make sure bot is admin)
+DEENDAYAL_VERIFIED_LOG = int(environ.get('DEENDAYAL_VERIFIED_LOG', '-1002270564015'))  # Log channel id (make sure bot is admin)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/dreamcinezone')  # How to open tutorial link for verification
 
 # ============================
@@ -93,11 +93,11 @@ IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 # ============================
 # Channel & Group Links Configuration
 # ============================
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/dreamcinezone')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/dreamcinezone')
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/dreamcinezone')
-DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/dreamcinezone')
-OWNERID = int(os.environ.get('OWNERID', '1234567890'))  # Replace with the actual admin ID
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+9a7WaNIEhlM2NmQ1')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/ROYALBOMMA')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/ROYALBOMMA')
+DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/ROYALBOMMA')
+OWNERID = int(os.environ.get('OWNERID', '7724838876'))  # Replace with the actual admin ID
 
 # ============================
 # User Configuration
