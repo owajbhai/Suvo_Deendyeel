@@ -1,19 +1,16 @@
-
-# bot dependencies 
 pyrofork==2.3.45            
 tgcrypto       
-pymongo[srv]==4.5.0        
-motor==3.3.2                
-marshmallow==3.20.1         
-umongo==3.1.0              
+pymongo[srv]==3.12.3    
+motor==2.5.1               
+marshmallow==3.14.1      
+umongo      
 requests       
 bs4    
 git+https://github.com/Joelkb/cinemagoer 
 shortzy          
 datetime                 
 pytz            
-aiohttp       
-
+aiohttp  
 
 # Master tools
 PyLeaves==1.0.2
@@ -42,7 +39,6 @@ apscheduler
 pyshorteners
 pyromod
 colorama
-
 
 # Text Matching Tools
 fuzzywuzzy
