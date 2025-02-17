@@ -34,28 +34,22 @@ async def add_redeem_code(client, message):
 
         codes_text = '\n'.join(f"➔ <code>/redeem {code}</code>" for code in codes)
         text = f"""
-<b>🎉 <u>Gɪғᴛᴄᴏᴅᴇ Gᴇɴᴇʀᴀᴛᴇᴅ ✅</u></b>
+            <b>🎉 <u>Gɪғᴛᴄᴏᴅᴇ Gᴇɴᴇʀᴀᴛᴇᴅ ✅</u></b>
 
-<b> <u>Tᴏᴛᴀʟ ᴄᴏᴅᴇ:</u></b> {num_codes}
+            <b> <u>Tᴏᴛᴀʟ ᴄᴏᴅᴇ:</u></b> {num_codes}
 
-{codes_text}
+            {codes_text}
 
-<b>⏳ <u>Duration:</u></b> {time}
+            <b>⏳ <u>Duration:</u></b> {time}
 
-🌟<u>𝗥𝗲𝗱𝗲𝗲𝗺 𝗖𝗼𝗱𝗲 𝗜𝗻𝘀𝘁𝗿𝘂𝗰𝘁𝗶𝗼𝗻</u>🌟
+            🌟<u>𝗥𝗲𝗱𝗲𝗲𝗺 𝗖𝗼𝗱𝗲 𝗜𝗻𝘀𝘁𝗿𝘂𝗰𝘁𝗶𝗼𝗻</u>🌟
 
-<b> <u>Click on the code above</u> to copy it instantly!</b>
-<b> <u>Send the copied code to the bot</u>\n to unlock your premium features!</b>
+            <b> <u>Click on the code above</u> to copy it instantly!</b>
+            <b> <u>Send the copied code to the bot</u>\n to unlock your premium features!</b>
 
-<b>🚀 Enjoy your premium access! 🔥</u></b>
-"""
-
-        keyboard = InlineKeyboardMarkup(
-            [
-                [InlineKeyboardButton("🔑 Redeem Now 🔥", url=f"https://t.me/{temp.U_NAME}")]
-            ]
-        )
-
+            <b>🚀 Enjoy your premium access! 🔥</u></b>
+            """
+        keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔑 Redeem Now 🔥", url=f"https://t.me/{temp.U_NAME}")]])
         await message.reply_text(text, reply_markup=keyboard)
     else:
         await message.reply_text("<b>♻ Usage:\n\n➩ <code>/add_redeem 1min 1</code>,\n➩ <code>/add_redeem 1hour 10</code>,\n➩ <code>/add_redeem 1day 5</code></b>")
@@ -107,15 +101,15 @@ async def redeem_code(client, message):
                         disable_web_page_preview=True
                     )
                     log_message = f"""
-#Redeem_Premium 🔓
+                        #Redeem_Premium 🔓
 
-👤 <b>User:</b> {user.mention}
-⚡ <b>User ID:</b> <code>{user_id}</code>
-⏳ <b>Premium Access Duration:</b> <code>{time}</code>
-⌛️ <b>Expiry Date:</b> {expiry_str_in_ist}
+                        👤 <b>User:</b> {user.mention}
+                        ⚡ <b>User ID:</b> <code>{user_id}</code>
+                        ⏳ <b>Premium Access Duration:</b> <code>{time}</code>
+                        ⌛️ <b>Expiry Date:</b> {expiry_str_in_ist}
 
-🎉 Premium activated successfully! 🚀
-"""
+                        🎉 Premium activated successfully! 🚀
+                        """
                     await client.send_message(
                         PREMIUM_LOGS,
                         text=log_message,
