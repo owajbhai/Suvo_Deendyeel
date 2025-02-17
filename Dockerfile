@@ -1,15 +1,15 @@
-
 FROM python:3.10.8
-RUN apt-get update && apt-get install -y --no-install-recommends git && rm -rf /var/lib/apt/lists/*
+
+RUN apt update && apt upgrade -y && \
+    apt install -y git && \
+    rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt /requirements.txt
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r /requirements.txt
 
 WORKDIR /Deendayal_botz
-COPY . /Deendayal_botz/
-
-RUN chmod +x /Deendayal_botz/start.sh
-
-RUN pip3 install --no-cache-dir -U pip --root-user-action=ignore && \
-    pip3 install --no-cache-dir -U -r requirements.txt --root-user-action=ignore
-
-CMD ["/bin/bash", "./start.sh"]
+COPY . .
+CMD ["python", "bot.py"]
 
 
