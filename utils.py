@@ -94,16 +94,13 @@ async def is_check_admin(bot, chat_id, user_id):
     except:
         return False
     
-async def get_movie_update_status(bot_id):
+async def get_status(bot_id):
     try:
-        status = await db.movie_update_status(bot_id)
-        if status is None:
-            logger.warning(f"No notification status found for bot with ID {bot_id}. Defaulting to 'False'.")
-            return False  
-        return status
+        return await db.movie_update_status(bot_id) or False  
     except Exception as e:
-        logger.error(f"Failed to fetch movie update notification status for bot {bot_id}: {e}")
-        return False 
+        logging.error(f"Error in get_movie_update_status: {e}")
+        return False  
+
     
 async def get_poster(query, bulk=False, id=False, file=None):
     if not id:
