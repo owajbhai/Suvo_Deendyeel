@@ -16,30 +16,30 @@ async def vrfs(client, message):
     last_year = await vr_db.get_vr_count("year", year=datetime.now().year - 1)
 
     btn = [[
-        InlineKeyboardButton("today", callback_data=f'vrrfrs#tud'), 
+        InlineKeyboardButton("📅 today", callback_data=f'vrrfrs#tud'), 
         InlineKeyboardButton(f"{today}", callback_data=f'vrrfrs#tud')
         ],[
-        InlineKeyboardButton("yesterday", callback_data=f'vrrfrs#yes'), 
+        InlineKeyboardButton("📆 yesterday", callback_data=f'vrrfrs#yes'), 
         InlineKeyboardButton(f"{yesterday}", callback_data=f'vrrfrs#yes')
         ],[
-        InlineKeyboardButton("this week", callback_data=f'vrrfrs#week'), 
+        InlineKeyboardButton("📅 this week", callback_data=f'vrrfrs#week'), 
         InlineKeyboardButton(f"{this_week}", callback_data=f'vrrfrs#week')     
         ],[
-        InlineKeyboardButton("this month", callback_data=f'vrrfrs#mont'), 
+        InlineKeyboardButton("📅 this month", callback_data=f'vrrfrs#mont'), 
         InlineKeyboardButton(f"{this_month}", callback_data=f'vrrfrs#mont')
         ],[
-        InlineKeyboardButton("last month", callback_data=f'vrrfrs#lmont'), 
+        InlineKeyboardButton("📅 last month", callback_data=f'vrrfrs#lmont'), 
         InlineKeyboardButton(f"{last_month}", callback_data=f'vrrfrs#lmont')        
         ],[
-        InlineKeyboardButton("this year", callback_data=f'vrrfrs#tyear'), 
+        InlineKeyboardButton("📅 this year", callback_data=f'vrrfrs#tyear'), 
         InlineKeyboardButton(f"{this_year}", callback_data=f'vrrfrs#tyear')
         ],[
-        InlineKeyboardButton("last year", callback_data=f'vrrfrs#lyear'), 
+        InlineKeyboardButton("📅 last year", callback_data=f'vrrfrs#lyear'), 
         InlineKeyboardButton(f"{last_year}", callback_data=f'vrrfrs#lyear')
         ],[
-        InlineKeyboardButton("refresh", callback_data=f'vrrfrs#vrrfrs'), 
+        InlineKeyboardButton("🔄 refresh", callback_data=f'vrrfrs#vrrfrs'), 
     ]]
-    await message.reply_text("Total verified users", reply_markup=InlineKeyboardMarkup(btn))
+    await message.reply_text("✅ **#verification**\n\nTotal verified users", reply_markup=InlineKeyboardMarkup(btn))
 
 @Client.on_callback_query(filters.regex(r"^vrrfrs"))
 async def vr_ref(client, query): 
@@ -72,33 +72,33 @@ async def vr_ref(client, query):
     last_year = await vr_db.get_vr_count("year", year=datetime.now().year - 1)
     
     btn = [[
-        InlineKeyboardButton("today", callback_data=f'vrrfrs#tud'), 
+        InlineKeyboardButton("📅 today", callback_data=f'vrrfrs#tud'), 
         InlineKeyboardButton(f"{today}", callback_data=f'vrrfrs#tud')
         ],[
-        InlineKeyboardButton("yesterday", callback_data=f'vrrfrs#yes'), 
+        InlineKeyboardButton("📆 yesterday", callback_data=f'vrrfrs#yes'), 
         InlineKeyboardButton(f"{yesterday}", callback_data=f'vrrfrs#yes')
         ],[
-        InlineKeyboardButton("this week", callback_data=f'vrrfrs#week'), 
+        InlineKeyboardButton("📅 this week", callback_data=f'vrrfrs#week'), 
         InlineKeyboardButton(f"{this_week}", callback_data=f'vrrfrs#week')     
         ],[
-        InlineKeyboardButton("this month", callback_data=f'vrrfrs#mont'), 
+        InlineKeyboardButton("📅 this month", callback_data=f'vrrfrs#mont'), 
         InlineKeyboardButton(f"{this_month}", callback_data=f'vrrfrs#mont')
         ],[
-        InlineKeyboardButton("last month", callback_data=f'vrrfrs#lmont'), 
+        InlineKeyboardButton("📅 last month", callback_data=f'vrrfrs#lmont'), 
         InlineKeyboardButton(f"{last_month}", callback_data=f'vrrfrs#lmont')        
         ],[
-        InlineKeyboardButton("this year", callback_data=f'vrrfrs#tyear'), 
+        InlineKeyboardButton("📅 this year", callback_data=f'vrrfrs#tyear'), 
         InlineKeyboardButton(f"{this_year}", callback_data=f'vrrfrs#tyear')
         ],[
-        InlineKeyboardButton("last year", callback_data=f'vrrfrs#lyear'), 
+        InlineKeyboardButton("📅 last year", callback_data=f'vrrfrs#lyear'), 
         InlineKeyboardButton(f"{last_year}", callback_data=f'vrrfrs#lyear')
         ],[
-        InlineKeyboardButton("refresh", callback_data=f'vrrfrs#vrrfrs'), 
+        InlineKeyboardButton("🔄 refresh", callback_data=f'vrrfrs#vrrfrs'), 
     ]] 
     try: 
-        await query.message.edit("Total verified users", reply_markup=InlineKeyboardMarkup(btn))
+        await query.message.edit("✅ **#verification**\n\nTotal verified users", reply_markup=InlineKeyboardMarkup(btn))
     except MessageNotModified:
         pass
-    await query.answer("updated data")
+    await query.answer("Refreshing data ✅")
 
   
