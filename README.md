@@ -3,6 +3,12 @@
 
 **OWNER**
 
+
+## ⚠ Under Maintenance ⚠  
+This repository is currently under maintenance. Please **DO NOT deploy** until further notice.  
+
+
+
 * [![Contact Developer](https://img.shields.io/static/v1?label=Contact+Developer&message=On+Telegram&color=critical)](https://t.me/Deendayal_Support_Group)
 
 First Check our **Demo** bot -
