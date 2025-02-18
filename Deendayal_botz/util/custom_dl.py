@@ -1,15 +1,15 @@
-#Thanks @DeletedFromEarth for helping in this journey 
+#Thanks @dreamcinezone for helping in this journey 
 import math
 import asyncio
 import logging
 from info import *
 from typing import Dict, Union
-from Deendayal_botz import work_loads
+from Deendayal_botz.Bot import work_loads
 from pyrogram import Client, utils, raw
 from .file_properties import get_file_ids
 from pyrogram.session import Session, Auth
 from pyrogram.errors import AuthBytesInvalid
-from server.exceptions import FIleNotFound
+from Deendayal_botz.server.exceptions import FIleNotFound
 from pyrogram.file_id import FileId, FileType, ThumbnailSource
 
 

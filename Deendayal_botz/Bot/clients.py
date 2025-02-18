@@ -2,7 +2,7 @@ import asyncio
 import logging
 from info import *
 from pyrogram import Client
-from util.config_parser import TokenParser
+from Deendayal_botz.util.config_parser import TokenParser
 from . import multi_clients, work_loads, DeendayalBot
 
 

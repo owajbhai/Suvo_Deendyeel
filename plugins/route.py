@@ -6,12 +6,12 @@ import secrets
 import time
 import mimetypes
 from aiohttp.http_exceptions import BadStatusLine
-from Deendayal_botz import multi_clients, work_loads, DeendayalBot
-from server.exceptions import FIleNotFound, InvalidHash
-from zzint import StartTime, __version__
-from util.custom_dl import ByteStreamer
-from util.time_format import get_readable_time
-from util.render_template import render_page
+from Deendayal_botz.Bot import multi_clients, work_loads, DeendayalBot
+from Deendayal_botz.server.exceptions import FIleNotFound, InvalidHash
+from Deendayal_botz.zzint import StartTime, __version__
+from Deendayal_botz.util.custom_dl import ByteStreamer
+from Deendayal_botz.util.time_format import get_readable_time
+from Deendayal_botz.util.render_template import render_page
 from info import *
 
 

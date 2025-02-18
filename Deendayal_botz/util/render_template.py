@@ -1,11 +1,11 @@
-#Thanks @DeletedFromEarth for helping in this journey 
+#Thanks @dreamcinezone for helping in this journey 
 
 import jinja2
 from info import *
-from Deendayal_botz import DeendayalBot
-from util.human_readable import humanbytes
-from util.file_properties import get_file_ids
-from server.exceptions import InvalidHash
+from Deendayal_botz.Bot import DeendayalBot
+from Deendayal_botz.util.human_readable import humanbytes
+from Deendayal_botz.util.file_properties import get_file_ids
+from Deendayal_botz.server.exceptions import InvalidHash
 import urllib.parse
 import logging
 import aiohttp
@@ -27,9 +27,9 @@ async def render_page(id, secure_hash, src=None):
     tag = file_data.mime_type.split("/")[0].strip()
     file_size = humanbytes(file_data.file_size)
     if tag in ["video", "audio"]:
-        template_file = "template/req.html"
+        template_file = "Deendayal_botz/template/req.html"
     else:
-        template_file = "template/dl.html"
+        template_file = "Deendayal_botz/template/dl.html"
         async with aiohttp.ClientSession() as s:
             async with s.get(src) as u:
                 file_size = humanbytes(int(u.headers.get("Content-Length")))

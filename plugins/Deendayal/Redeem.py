@@ -60,6 +60,7 @@ async def redeem_code(client, message):
     user_id = message.from_user.id
     if len(message.command) == 2:
         redeem_code = message.command[1]
+
         if redeem_code in REDEEM_CODE:
             try:
                 time = REDEEM_CODE.pop(redeem_code)

@@ -1,16 +1,16 @@
-pyrofork==2.3.45            
-tgcrypto       
-pymongo[srv]==3.12.3    
-motor==2.5.1               
-marshmallow==3.14.1      
-umongo      
-requests       
-bs4    
-git+https://github.com/Joelkb/cinemagoer 
-shortzy          
-datetime                 
-pytz            
-aiohttp  
+pyrofork==2.3.45
+tgcrypto
+pymongo[srv]==4.11.1
+motor==3.7.0
+marshmallow==3.26.1
+umongo
+requests
+bs4
+git+https://github.com/Joelkb/cinemagoer
+shortzy
+datetime
+pytz
+aiohttp
 
 # Master tools
 PyLeaves==1.0.2
@@ -19,7 +19,7 @@ Wikipedia
 # Other tools
 opencv-python-headless==4.8.1.78
 python-dotenv==0.21.1
-speedtest==0.0.1
+speedtest
 humanize==4.6.0
 Pillow==9.4.0
 psutil==5.9.4
@@ -31,7 +31,7 @@ pytz
 aiofiles
 dnspython==2.3.0
 python-decouple
-ffmpeg-python>=0.2.0
+ffmpeg-python==0.2.0
 
 # Jinja and Scheduler
 jinja2
@@ -48,5 +48,3 @@ python-Levenshtein
 googletrans==3.1.0a0
 telegraph==2.2.0
 gTTS==2.3.1
-
-

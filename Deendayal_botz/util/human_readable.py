@@ -1,7 +1,5 @@
-#Thanks @DeletedFromEarth for helping in this journey 
+#Thanks @dreamcinezone for helping in this journey 
 def humanbytes(size):
-    # https://stackoverflow.com/a/49361727/4723940
-    # 2**10 = 1024
     if not size:
         return ""
     power = 2**10

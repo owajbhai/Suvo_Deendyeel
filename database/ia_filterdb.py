@@ -316,3 +316,4 @@ async def get_qualities(text, qualities: list):
 
 
 
+

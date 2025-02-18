@@ -13,6 +13,8 @@ First Check our **Demo** bot -
 
 ### 🌴 [Sᴀʜɪᴅ ᴍᴀʟɪᴋ](https://github.com/Sahidmalik001)
 
+### 🌴 [⌯ Ꭺɴᴏɴʏᴍᴏᴜꜱ | ×͜× |](https://t.me/BeingXAnonymous)
+
 ### 🌴 [Mʀ Rᴀᴀᴢᴢ](https://github.com/MrRaazz)
 
 ### 🌴 [Hᴀʀsʜᴀʟ Pᴜʀᴏʜɪᴛ Eᴅɪᴛs](https://github.com/HarshalPurohitEdits)

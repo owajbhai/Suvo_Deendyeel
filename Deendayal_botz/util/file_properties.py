@@ -1,10 +1,10 @@
-#Thanks @DeletedFromEarth for helping in this journey 
+#Thanks @dreamcinezone for helping in this journey 
 from pyrogram import Client
 from typing import Any, Optional
 from pyrogram.types import Message
 from pyrogram.file_id import FileId
 from pyrogram.raw.types.messages import Messages
-from server.exceptions import FIleNotFound
+from Deendayal_botz.server.exceptions import FIleNotFound
 
 
 async def parse_file_id(message: "Message") -> Optional[FileId]:
