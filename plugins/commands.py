@@ -18,8 +18,8 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import *
 from database.ia_filterdb import Media, Media2, get_file_details, unpack_new_file_id, get_bad_files
 from database.users_chats_db import db, delete_all_msg
-from info import CHANNELS, FSUB_PICS, ADMINS,  LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, PROTECT_CONTENT, CHNL_LNK, REQST_CHANNEL, GRP_LNK, SUPPORT_CHAT_ID, MAX_B_TN, VERIFY, REACTIONS, HOW_TO_VERIFY, PICS, DEENDAYAL_VERIFIED_LOG, SUBSCRIPTION, DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK, STREAM_MODE, EMOJI_MODE, OWNER_LNK, OWNER_UPI_ID, QR_CODE, DELETE_TIME
-from utils import get_settings, get_size, is_subscribed,  save_group_settings, temp, verify_user, check_token, check_verification, get_token, get_shortlink, get_tutorial, get_time
+from info import CHANNELS, FSUB_PICS, ADMINS,  LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, PROTECT_CONTENT, CHNL_LNK, REQST_CHANNEL, GRP_LNK, SUPPORT_CHAT_ID, MAX_B_TN, VERIFY, REACTIONS, HOW_TO_VERIFY, PICS, DEENDAYAL_VERIFIED_LOG, SUBSCRIPTION,DEENDAYAL_VERIFY_EXPIRE, DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK, STREAM_MODE, EMOJI_MODE, OWNER_LNK, OWNER_UPI_ID, QR_CODE, DELETE_TIME
+from utils import get_settings, get_size, is_subscribed,  save_group_settings, temp, verify_user, check_token, check_verification, get_token, get_shortlink, get_tutorial, get_time, deendayal_verify_expire
 from database.connections_mdb import active_connection
 
 # Set up logging
@@ -344,7 +344,7 @@ async def start(client, message):
             ]]
             await message.reply_photo(
                 photo="https://graph.org/file/6928de1539e2e80e47fb8.jpg",
-                caption=f"<b>Hey {message.from_user.mention},\n\n𝑌𝑜𝑢 𝐴𝑟𝑒 𝑆𝑢𝑐𝑐𝑒𝑠𝑠𝑓𝑢𝑙 𝑉𝑒𝑟𝑖𝑓𝑖𝑒𝑑 ! 𝑁𝑜𝑤 𝑌𝑜𝑢 𝐻𝑎𝑣𝑒 𝑈𝑛𝑙𝑖𝑚𝑖𝑡𝑒𝑑 𝐴𝑐𝑐𝑒𝑠𝑠 𝐹𝑜𝑟 24 𝐻𝑜𝑢𝑟𝑠.\n\n<blockquote>आप सफलतापूर्वक सत्यापित हो गए हैं अब आप 24 घंटे तक 𝐷𝑖𝑟𝑒𝑐𝑡 𝑀𝑜𝑣𝑖𝑒 की 𝐹𝑖𝑙𝑒𝑠 प्राप्त कर सकते हैं।</blockquote></b>",
+                caption=f"<b>Hey {message.from_user.mention},\n\n𝑌𝑜𝑢 𝐴𝑟𝑒 𝑆𝑢𝑐𝑐𝑒𝑠𝑠𝑓𝑢𝑙 𝑉𝑒𝑟𝑖𝑓𝑖𝑒𝑑 ! 𝑁𝑜𝑤 𝑌𝑜𝑢 𝐻𝑎𝑣𝑒 𝑈𝑛𝑙𝑖𝑚𝑖𝑡𝑒𝑑 𝐴𝑐𝑐𝑒𝑠𝑠 𝐹𝑜𝑟 {deendayal_verify_expire(DEENDAYAL_VERIFY_EXPIRE)}.\n\n<blockquote>आप सफलतापूर्वक सत्यापित हो गए हैं अब आप {deendayal_verify_expire(DEENDAYAL_VERIFY_EXPIRE)} तक 𝐷𝑖𝑟𝑒𝑐𝑡 𝑀𝑜𝑣𝑖𝑒 की 𝐹𝑖𝑙𝑒𝑠 प्राप्त कर सकते हैं।</blockquote></b>",
                 reply_markup=InlineKeyboardMarkup(btn)
             )
             await verify_user(client, userid, token) 
