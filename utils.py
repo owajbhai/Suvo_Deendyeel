@@ -257,6 +257,15 @@ def get_size(size):
         size /= 1024.0
     return "%.2f %s" % (size, units[i])
 
+def deendayal_verify_expire(hours):
+    periods = [(' ᴅᴀʏs', 24), (' ʜᴏᴜʀ', 1)]
+    result = ''
+    for period_name, period_hours in periods:
+        if hours >= period_hours:
+            period_value, hours = divmod(hours, period_hours)
+            result += f'{int(period_value)}{period_name} '
+    return result.strip()
+
 def split_list(l, n):
     for i in range(0, len(l), n):
         yield l[i:i + n]  
@@ -280,7 +289,6 @@ def get_file_id(msg: Message):
 
 def extract_user(message: Message) -> Union[int, str]:
     """extracts the user from a message"""
-    # https://github.com/SpEcHiDe/PyroGramBot/blob/f30e2cca12002121bad1982f68cd0ff9814ce027/pyrobot/helper_functions/extract_user.py#L7
     user_id = None
     user_first_name = None
     if message.reply_to_message:
@@ -351,10 +359,7 @@ def split_quotes(text: str) -> List:
         counter += 1
     else:
         return text.split(None, 1)
-
-    # 1 to avoid starting quote, and counter is exclusive so avoids ending
     key = remove_escapes(text[1:counter].strip())
-    # index will be in range, or `else` would have been executed and returned
     rest = text[counter + 1:].strip()
     if not key:
         key = text[0] + text[0]
@@ -791,7 +796,6 @@ async def send_all(bot, userid, files, ident, chat_id, user_name, query):
         await query.answer('Hᴇʏ, Sᴛᴀʀᴛ Bᴏᴛ Fɪʀsᴛ Aɴᴅ Cʟɪᴄᴋ Sᴇɴᴅ Aʟʟ', show_alert=True)
         
 async def get_cap(settings, remaining_seconds, files, query, total_results, search):
-    # Aᴅᴅᴇᴅ Bʏ @creatorrio
     if settings["imdb"]:
         IMDB_CAP = temp.IMDB_CAP.get(query.from_user.id)
         if IMDB_CAP:
@@ -869,5 +873,8 @@ def get_time(seconds):
             period_value, seconds = divmod(seconds, period_seconds)
             result += f'{int(period_value)}{period_name}'
     return result
+
+
+
 
 
