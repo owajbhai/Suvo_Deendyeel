@@ -257,15 +257,6 @@ def get_size(size):
         size /= 1024.0
     return "%.2f %s" % (size, units[i])
 
-def deendayal_verify_expire(hours):
-    periods = [(' ᴅᴀʏs', 24), (' ʜᴏᴜʀ', 1)]
-    result = ''
-    for period_name, period_hours in periods:
-        if hours >= period_hours:
-            period_value, hours = divmod(hours, period_hours)
-            result += f'{int(period_value)}{period_name} '
-    return result.strip()
-
 def split_list(l, n):
     for i in range(0, len(l), n):
         yield l[i:i + n]  
