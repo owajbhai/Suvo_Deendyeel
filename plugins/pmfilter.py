@@ -208,8 +208,7 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium"),
-            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("📥 𝗦𝗘𝗡𝗗 𝗔𝗟𝗟 𝗙𝗜𝗟𝗘𝗦 📤", callback_data=f"sendfiles#{key}")
            
         ])
 
@@ -228,8 +227,7 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium"),
-            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}") 
+            InlineKeyboardButton("📥 𝗦𝗘𝗡𝗗 𝗔𝗟𝗟 𝗙𝗜𝗟𝗘𝗦 📤", callback_data=f"sendfiles#{key}") 
            
         ])
 
@@ -350,7 +348,7 @@ async def advantage_spoll_choker(bot, query):
                 
                 # Create the button for contacting admin
                 contact_admin_button = InlineKeyboardMarkup(
-                    [[InlineKeyboardButton("🔰Cʟɪᴄᴋ ʜᴇʀᴇ & ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴀᴅᴍɪɴ🔰", url=OWNER_LNK)]]
+                    [[InlineKeyboardButton("🔰𝗦𝗘𝗡𝗗 𝗥𝗘𝗤𝗨𝗘𝗦𝗧 𝗛𝗘𝗥𝗘🔰", url="https://t.me/Ms_Support_Group")]]
                 )
                 
                 k = await query.message.edit(script.MVE_NT_FND, reply_markup=contact_admin_button)
@@ -460,8 +458,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium"),
-            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("📥 𝗦𝗘𝗡𝗗 𝗔𝗟𝗟 𝗙𝗜𝗟𝗘𝗦 📤", callback_data=f"sendfiles#{key}")
            
         ])
 
@@ -480,8 +477,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium"),
-            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("📥 𝗦𝗘𝗡𝗗 𝗔𝗟𝗟 𝗙𝗜𝗟𝗘𝗦 📤", callback_data=f"sendfiles#{key}")
            
         ])
 
@@ -627,8 +623,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium"),
-            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("📥 𝗦𝗘𝗡𝗗 𝗔𝗟𝗟 𝗙𝗜𝗟𝗘𝗦 📤", callback_data=f"sendfiles#{key}")
             
         ])
 
@@ -647,8 +642,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium"),
-            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("📥 𝗦𝗘𝗡𝗗 𝗔𝗟𝗟 𝗙𝗜𝗟𝗘𝗦 📤", callback_data=f"sendfiles#{key}")
             
         ])
 
@@ -812,7 +806,6 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             for file in files
         ]
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium"),
             InlineKeyboardButton("ꜱᴇʟᴇᴄᴛ ᴀɢᴀɪɴ", callback_data=f"seasons#{key}")
         ])
     else:
@@ -830,8 +823,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=plan"),
-            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("📥 𝗦𝗘𝗡𝗗 𝗔𝗟𝗟 𝗙𝗜𝗟𝗘𝗦 📤", callback_data=f"sendfiles#{key}")
             
         ])
     
@@ -2147,7 +2139,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "source":
         buttons = [[
-            InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ 📜', url='https://github.com/Deendayal403/Deendayal_dhakad.git'),
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -2451,8 +2442,7 @@ async def auto_filter(client, msg, spoll=False):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium"),
-            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("📥 𝗦𝗘𝗡𝗗 𝗔𝗟𝗟 𝗙𝗜𝗟𝗘𝗦 📤", callback_data=f"sendfiles#{key}")
             
         ])
 
@@ -2471,8 +2461,7 @@ async def auto_filter(client, msg, spoll=False):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⚜️ 𝐑𝐞𝐦𝐨𝐯𝐞 𝐚𝐝𝐬 ⚜️", url=f"https://t.me/{temp.U_NAME}?start=premium"),
-            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("📥 𝗦𝗘𝗡𝗗 𝗔𝗟𝗟 𝗙𝗜𝗟𝗘𝗦 📤", callback_data=f"sendfiles#{key}")
             
         ])
 
