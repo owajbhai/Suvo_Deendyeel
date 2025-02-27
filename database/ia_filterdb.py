@@ -268,7 +268,7 @@ async def send_msg(bot, filename, caption):
         elif season and season in filename:
             filename = filename[: filename.find(season) + 1]
 
-        qualities = ["ORG", "org", "hdcam", "HDCAM", "HQ", "hq", "HDRip", "hdrip", "camrip", "CAMRip", "hdtc", "predvd", "DVDscr", "dvdscr", "dvdrip", "dvdscr", "HDTC", "dvdscreen", "HDTS", "hdts"]
+        qualities = ["ORG", "HQ", "hq", "HDRip", "hdrip", "BluRay", "bluray", "WEBRip", "COMBINED", "WebRip", "DS4K", "Webdl", "WEB-DL", "WEBDL", "hdtc", "predvd", "WEBRIP", "WEBRip", "HDTC", "HDTS", "hdts"]
         quality = await get_qualities(caption.lower(), qualities) or "HDRip"
 
         language = ""
@@ -280,7 +280,7 @@ async def send_msg(bot, filename, caption):
 
         filename = re.sub(r"[\(\)\[\]\{\}:;'\-!]", "", filename)
 
-        text = "#𝑵𝒆𝒘_𝑭𝒊𝒍𝒆_𝑨𝒅𝒅𝒆𝒅 ✅\n\n👷𝑵𝒂𝒎𝒆: `{}`\n\n🌳𝑸𝒖𝒂𝒍𝒊𝒕𝒚: {}\n\n🍁𝑨𝒖𝒅𝒊𝒐: {}"
+        text = "<b><blockquote>𝗡𝗘𝗪 𝗙𝗜𝗟𝗘 𝗔𝗗𝗗𝗘𝗗 ✅</blockquote>\n\n🏷 ᴛɪᴛʟᴇ : `{}`\n\n🌿 ǫᴜᴀʟɪᴛʏ : {}\n🔊 ᴀᴜᴅɪᴏ : {}</b>"
         text = text.format(filename, quality, language)
 
         if await add_name(OWNERID, filename):
@@ -293,7 +293,7 @@ async def send_msg(bot, filename, caption):
                     resized_poster = await fetch_image(poster_url)  
 
             filenames = filename.replace(" ", '-')
-            btn = [[InlineKeyboardButton('🌲 Get Files 🌲', url=f"https://telegram.me/{temp.U_NAME}?start=getfile-{filenames}")]]
+            btn = [[InlineKeyboardButton('🔍𝗦𝗘𝗔𝗥𝗖𝗛 𝗛𝗘𝗥𝗘', url="https://t.me/msrequest_group")]]
             
             if resized_poster:
                 await bot.send_photo(chat_id=DEENDAYAL_MOVIE_UPDATE_CHANNEL, photo=resized_poster, caption=text, reply_markup=InlineKeyboardMarkup(btn))
