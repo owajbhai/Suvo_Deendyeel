@@ -1,9 +1,9 @@
 class script(object):
-    START_TXT = """<b> 🚩 जय श्री राम 🚩\n\n ʜᴇʏ {}, {}\n\n𝒊 𝑨𝒎 𝑻𝒉𝒆 𝑴𝒐𝒔𝒕 𝑷𝒐𝒘𝒆𝒓𝒇𝒖𝒍 𝑨𝒖𝒕𝒐 𝑭𝒊𝒍𝒕𝒆𝒓 𝑩𝒐𝒕 𝑾𝒊𝒕𝒉 𝑷𝒓𝒆𝒎𝒊𝒖𝒎 𝑭𝒆𝒂𝒕𝒖𝒓𝒆.</b>"""
+    START_TXT = """<b> \n\n ʜᴇʏ {}, {}\n\n𝒊 𝑨𝒎 𝑻𝒉𝒆 𝑴𝒐𝒔𝒕 𝑷𝒐𝒘𝒆𝒓𝒇𝒖𝒍 𝑨𝒖𝒕𝒐 𝑭𝒊𝒍𝒕𝒆𝒓 𝑩𝒐𝒕 𝑾𝒊𝒕𝒉 𝑷𝒓𝒆𝒎𝒊𝒖𝒎 𝑭𝒆𝒂𝒕𝒖𝒓𝒆.</b>"""
 
-    GSTART_TXT = """<b>🚩 जय श्री राम 🚩\n\nʜᴇʏ {},\n\n𝒊 𝑨𝒎 𝑻𝒉𝒆 𝑴𝒐𝒔𝒕 𝑷𝒐𝒘𝒆𝒓𝒇𝒖𝒍 𝑨𝒖𝒕𝒐 𝑭𝒊𝒍𝒕𝒆𝒓 𝑩𝒐𝒕 𝑾𝒊𝒕𝒉 𝑷𝒓𝒆𝒎𝒊𝒖𝒎 𝑭𝒆𝒂𝒕𝒖𝒓𝒆.</b>"""
+    GSTART_TXT = """<b>\n\nʜᴇʏ {},\n\n𝒊 𝑨𝒎 𝑻𝒉𝒆 𝑴𝒐𝒔𝒕 𝑷𝒐𝒘𝒆𝒓𝒇𝒖𝒍 𝑨𝒖𝒕𝒐 𝑭𝒊𝒍𝒕𝒆𝒓 𝑩𝒐𝒕 𝑾𝒊𝒕𝒉 𝑷𝒓𝒆𝒎𝒊𝒖𝒎 𝑭𝒆𝒂𝒕𝒖𝒓𝒆.</b>"""
     
-    HELP_TXT = """<b>🚩 जय श्री राम 🚩\n\nʜᴇʏ {},
+    HELP_TXT = """<b>\n\nʜᴇʏ {},
     
 ᴡᴇ ʜᴀᴠᴇ ᴅᴇᴠɪᴅᴇᴅ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ɢʀᴏᴜᴘ ᴏᴡɴᴇʀꜱ ᴀɴᴅ ʙᴏᴛ ᴜꜱᴇʀꜱ.\nᴀɴᴅ ᴡᴇ ʜᴀᴠᴇ ꜱᴏᴍᴇ ᴇxᴛʀᴀ ꜰᴇᴀᴛᴜʀᴇꜱ
 </b>"""
@@ -74,7 +74,7 @@ Nᴀᴍᴇ - {}
 ʏᴏᴜ ᴀʀᴇ ᴜꜱɪɴɢ ᴏɴᴇ ᴏꜰ ᴍʏ ᴏʟᴅ ᴍᴇꜱꜱᴀɢᴇꜱ, 
 ᴘʟᴇᴀꜱᴇ ꜱᴇɴᴅ ᴛʜᴇ ʀᴇǫᴜᴇꜱᴛ ᴀɢᴀɪɴ."""
 
-    CUDNT_FND = """<b>𝑆𝑝𝑒𝑙𝑙𝑖𝑛𝑔 𝑀𝑖𝑠𝑡𝑎𝑘𝑒 𝐵𝑟𝑜 ‼️\n𝐷𝑜𝑛'𝑡 𝑊𝑜𝑟𝑟𝑦 😊 𝐶ℎ𝑜𝑜𝑠𝑒 𝑇ℎ𝑒 𝐶𝑜𝑟𝑟𝑒𝑐𝑡 𝑂𝑛𝑒 𝐵𝑒𝑙𝑜𝑤 👇\n\n<blockquote>नीचे दिए गए विकल्पों में से movie के नाम की सही Spelling चुनें 👇</blockquote></b>"""
+    CUDNT_FND = """<b>𝑆𝑝𝑒𝑙𝑙𝑖𝑛𝑔 𝑀𝑖𝑠𝑡𝑎𝑘𝑒 𝐵𝑟𝑜 ‼️\n𝐷𝑜𝑛'𝑡 𝑊𝑜𝑟𝑟𝑦 😊 𝐶ℎ𝑜𝑜𝑠𝑒 𝑇ℎ𝑒 𝐶𝑜𝑟𝑟𝑒𝑐𝑡 𝑂𝑛𝑒 𝐵𝑒𝑙𝑜𝑤 👇\n\n<blockquote>ಕೆಳಗೆ ನೀಡಲಾದ ಆಯ್ಕೆಗಳಿಂದ movie ಸರಿಯಾದ ಹೆಸರು Spelling ಆಯ್ಕೆ 👇</blockquote></b>"""
 
     I_CUDNT = """<b>sᴏʀʀʏ ɴᴏ ꜰɪʟᴇs ᴡᴇʀᴇ ꜰᴏᴜɴᴅ ꜰᴏʀ ʏᴏᴜʀ ʀᴇǫᴜᴇꜱᴛ {} 😕
 
@@ -271,7 +271,7 @@ Nᴀᴍᴇ : {}
 
 Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     
-    CAPTION = """<b><a href="https://t.me/Deendayal_dhakad">{file_name}</a></b>\n\n<b>⚜️ Powered By : <a href=https://t.me/Deendayal_dhakad>[Deendayal_Dhakad]</a></b>"""
+    CAPTION = """<b><a href="https://t.me/SK_MOVIESZ">{file_name}</a></b>\n\n<b>⚜️ Powered By : <a href=https://t.me/SK_MOVIESZ>[SK_MOVIESZ]</a></b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>🏷 Title</b>: <a href={url}>{title}</a>
