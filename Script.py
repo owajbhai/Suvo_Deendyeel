@@ -278,7 +278,7 @@ sɪᴢᴇ ⚙️: {file_size}
 🎬 <b>ᴍᴏᴠɪᴇs ᴄʜᴀɴɴᴇʟ :➠</b> <a href='https://t.me/MOVIES_WORLDZSS'>ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴊᴏɪɴ ♨️</a>
 •────•────✦✗✦───•────•
 
-<b>©️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ :</b> <a href='https://t.me/botmaster55'>ᴘʀɪᴍᴇ ʙᴏᴛᴢ</a>
+<b>©️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ :</b> <a href='https://t.me/thunderfyu'>ᴘʀɪᴍᴇ ʙᴏᴛᴢ</a>
 """
 
     IMDB_TEMPLATE_TXT = """
